@@ -1,0 +1,2 @@
+# Rubyにはprintがある
+print "Hello, world!"
