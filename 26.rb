@@ -1,9 +1,9 @@
-# ネストしたdef
+# world!の返り値を、world!の中で定義したhelloメソッドで利用する
 def world!
-  str = __method__.to_s
-  define_method :hello do |_|
+  def hello(str)
     print "#{__method__.to_s.capitalize}, #{str}"
   end
+  __method__.to_s
 end
 
 hello world!
