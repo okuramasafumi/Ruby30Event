@@ -1,2 +1,2 @@
-# 標準出力を明示することもできる
-STDOUT.print "Hello, world!"
+# 標準出力（$>）を明示することもできる
+$>.puts "Hello, world!"
