@@ -1,2 +1,4 @@
-# 文字列はjoinで作れる
-puts ["H", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d", "!"].join
+# 正規表現でキャプチャして連結
+str = "Hello, ruby30 world!"
+md = str.match /^(\w+).+(\w{5,}!)/
+puts md.captures.join(', ')

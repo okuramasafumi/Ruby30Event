@@ -1,2 +1,3 @@
-# Symbolでもよいが、空白があるので工夫が必要
-puts :"Hello, world!"
+# シンボルのリテラルにもいくつか書き方がある
+print %s|Hello, world|
+puts :!
