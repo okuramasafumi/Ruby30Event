@@ -1,4 +1,4 @@
 # exitしてもハローワールドはできる
-at_exit { print "world!" }
+at_exit { puts "world!" }
 print "Hello, "
 exit

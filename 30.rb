@@ -9,4 +9,4 @@ end
 f.resume
 print ", "
 f.resume
-print "!"
+puts "!"

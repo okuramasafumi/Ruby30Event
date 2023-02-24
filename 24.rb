@@ -12,4 +12,4 @@ end
 
 Hello world!
 
-print $result.reverse.join(', ')
+puts $result.reverse.join(', ')

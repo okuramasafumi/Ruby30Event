@@ -6,6 +6,7 @@ class Printer
 
   def print
     Kernel.print @object
+    puts
   end
 end
 

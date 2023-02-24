@@ -6,4 +6,4 @@ class World
   def self.to_s = 'world!'
 end
 
-print "#{Hello}, #{World}"
+print "#{Hello}, #{World}\n"
