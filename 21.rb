@@ -1,8 +1,4 @@
-# 運任せ
-loop do
-  str = Array.new(13) { "Hello, world!".split.sample }.join
-  if str == "Hello, world!"
-    puts str
-    break
-  end
-end
+# 文字列は隣接させると連結される
+# %リテラルの区切り文字には空白が使える
+# Thanks @tompng
+puts(% Hello, ' world'"!")
