@@ -1,5 +1,5 @@
 # どうしてこうなるのかわからない
-# Dummyクラスは警告抑制に必要、sayメソッドはないSyntaxError
+# Dummyクラスは警告抑制に必要、sayメソッドはないとSyntaxError
 class Dummy
   def method_missing(meth, *args, &blk)
     puts meth
