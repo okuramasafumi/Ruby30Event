@@ -1,7 +1,10 @@
-# class_evalでインスタンスメソッドを定義する
-String.class_eval do
-  def print_self
-    puts self
+# メソッドチェーンは便利
+class String
+  "Helloworld!".each_char do |char|
+    define_method(char) { self + char }
   end
+  def comma = self + ?,
+  def space = self + ' '
 end
-"Hello, world!".print_self
+
+puts "".H.e.l.l.o.comma.space.w.o.r.l.d.!
