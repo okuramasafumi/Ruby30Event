@@ -2,6 +2,7 @@
 class Okura
   def name = "OKURA Masafumi"
   def work_as = "Freelancer"
+  def available_for_hiring? = true
   def organizer_of = "Kaigi on Rails"
   def to_s
     "Hello, world!"
