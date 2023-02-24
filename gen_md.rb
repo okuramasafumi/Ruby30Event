@@ -18,6 +18,14 @@ f = File.open('slide.md', 'w') do |f|
   f << "---\n"
   f << "# 30周年ということで、RubyでHello worldする30の方法を紹介します\n"
   f << "---\n"
+  f << "# レギュレーション：\"Hello, world!\"を改行込みで出力する\n"
+  f << "## 警告やエラーを出さない\n"
+  f << "---\n"
+  f << "# Grow.rbで皆さんもやってみよう！\n"
+  f << "## QRコードからイベントページに飛べます\n"
+  f << "![auto](qrcode_growrb.doorkeeper.jp.png)\n"
+  f << "---\n"
+  f << "---\n"
   (1..30).each do |i|
     filename = "#{i}.rb"
     text = <<~TEXT
