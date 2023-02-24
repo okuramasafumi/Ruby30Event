@@ -1,15 +1,16 @@
-# world!が先に評価される
-# カンマがあるとSyntaxError
-def method_missing(meth, *args, &blk)
-  $result ||= []
-  $result << meth.to_s
+# どうしてこうなるのかわからない
+# Dummyクラスは警告抑制に必要、sayメソッドはないSyntaxError
+class Dummy
+  def method_missing(meth, *args, &blk)
+    puts meth
+  end
+
+  def self.const_missing(name)
+    print name.to_s + ', '
+  end
+
+  def say(*)
+  end
 end
 
-def const_missing(const)
-  $result ||= []
-  $result << const.to_s
-end
-
-Hello world!
-
-puts $result.reverse.join(', ')
+Dummy.new.instance_eval("say Hello, world!")
