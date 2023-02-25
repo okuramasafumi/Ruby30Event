@@ -1,0 +1,1 @@
+`instance_method`メソッドで`puts`メソッドをオブジェクトとして取得する。そのままでは`call`できないので適当なオブジェクトに`bind`してから`call`する。`main`の文脈で`instance_method`を呼ぶのに`Kernel`が必要。

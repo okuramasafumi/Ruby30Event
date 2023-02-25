@@ -1,0 +1,1 @@
+`main`の`method_missing`をオーバーライドすると警告がでるので`Dummy`クラスを使う。`say`の後ろに"Hello, world!"を配置すると引数として解釈され、先に"Hello"の`const_missing`が呼ばれる。次に"world!"の`method_missing`が呼ばれる。これを`Dummy`内で行うために`instance_eval`を使っている。
